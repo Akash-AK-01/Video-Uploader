@@ -17,6 +17,61 @@ This application demonstrates a production-ready video management system with:
 
 ## 🏗️ Architecture
 
+\`\`\`
+┌─────────────────┐         ┌──────────────────┐         ┌─────────────┐
+│                 │         │                  │         │             │
+│  React Frontend │◄───────►│  Express Backend │◄───────►│  MongoDB    │
+│  (Port 5174)    │         │  (Port 5000)     │         │             │
+│                 │         │                  │         │             │
+└────────┬────────┘         └─────────┬────────┘         └─────────────┘
+         │                            │
+         │     Socket.io (Real-time)  │
+         └────────────────────────────┘
+\`\`\`
+
+## 📁 Project Structure
+
+\`\`\`
+VideoUpload/
+├── frontend/                 # React + Vite frontend
+│   ├── src/
+│   │   ├── components/       # UI components
+│   │   │   ├── Login.jsx
+│   │   │   ├── UploadForm.jsx
+│   │   │   └── VideoList.jsx
+│   │   ├── context/          # React Context
+│   │   │   └── AuthContext.jsx
+│   │   ├── services/         # API & Socket services
+│   │   │   ├── api.js
+│   │   │   └── socket.js
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── styles.css
+│   └── package.json
+│
+└── backend/                  # Node.js + Express backend
+    ├── config/               # Configuration
+    │   └── db.js
+    ├── models/               # MongoDB models
+    │   ├── User.js
+    │   └── Video.js
+    ├── middleware/           # Express middleware
+    │   ├── auth.js
+    │   └── roleCheck.js
+    ├── controllers/          # Route controllers
+    │   ├── authController.js
+    │   └── videoController.js
+    ├── routes/               # API routes
+    │   ├── auth.js
+    │   └── videos.js
+    ├── services/             # Business logic
+    │   └── sensitivityAnalysis.js
+    ├── uploads/              # Video storage
+    ├── server.js             # Entry point
+    ├── seedUsers.js          # Database seeder
+    └── package.json
+\`\`\`
+
 ## 🚀 Quick Start
 
 ### Prerequisites
