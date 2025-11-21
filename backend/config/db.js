@@ -13,8 +13,12 @@ const connectDB = async () => {
     console.error(`   1. Check if your IP is whitelisted in MongoDB Atlas`);
     console.error(`   2. Go to: Network Access → Add IP Address → Allow Access from Anywhere (0.0.0.0/0)`);
     console.error(`   3. Verify your connection string is correct`);
-    console.error(`   4. Check if antivirus/firewall is blocking MongoDB connection\n`);
-    process.exit(1);
+    console.error(`   4. Check MONGODB_URI environment variable is set`);
+    console.error(`   5. Check if antivirus/firewall is blocking MongoDB connection\n`);
+    // Don't exit in production - let server run without DB for health checks
+    if (process.env.NODE_ENV !== 'production') {
+      process.exit(1);
+    }
   }
 };
 

@@ -10,11 +10,11 @@ import videoRoutes from './routes/videos.js';
 // Load environment variables
 dotenv.config();
 
-// Connect to MongoDB
-connectDB();
-
 // Initialize Express app
 const app = express();
+
+// Connect to MongoDB (non-blocking)
+connectDB();
 const httpServer = createServer(app);
 
 // Initialize Socket.io
