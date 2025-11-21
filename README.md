@@ -17,7 +17,7 @@ This application demonstrates a production-ready video management system with:
 
 ## 🏗️ Architecture
 
-\`\`\`
+
 ┌─────────────────┐         ┌──────────────────┐         ┌─────────────┐
 │                 │         │                  │         │             │
 │  React Frontend │◄───────►│  Express Backend │◄───────►│  MongoDB    │
@@ -27,11 +27,11 @@ This application demonstrates a production-ready video management system with:
          │                            │
          │     Socket.io (Real-time)  │
          └────────────────────────────┘
-\`\`\`
+
 
 ## 📁 Project Structure
 
-\`\`\`
+
 VideoUpload/
 ├── frontend/                 # React + Vite frontend
 │   ├── src/
@@ -70,7 +70,7 @@ VideoUpload/
     ├── server.js             # Entry point
     ├── seedUsers.js          # Database seeder
     └── package.json
-\`\`\`
+
 
 ## 🚀 Quick Start
 
