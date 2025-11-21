@@ -26,23 +26,6 @@ This project is built as part of the **Pulse Talent Team Full-Stack Assignment**
 * [License](#license)
 
 ---
-
-# 📘 Overview
-
-This application demonstrates a complete video management workflow:
-
-✔ Video upload (Editors & Admins)
-✔ Sensitivity analysis with scoring (Safe / Flagged / Rejected)
-✔ Real-time processing updates via Socket.io
-✔ Video streaming using HTTP range requests
-✔ Role-based access control (Viewer / Editor / Admin)
-✔ Multi-tenant style user isolation
-✔ Deployed full-stack (Frontend + Backend + Database)
-
-The system is fully aligned with the assignment requirements.
-
----
-
 # ⭐ Features
 
 ### 🔐 Authentication & Authorization
@@ -331,52 +314,6 @@ Uses **HTTP Range Requests** to support:
 * User created + IP access configured
 
 ---
-
-# 📋 Assignment Requirements Checklist
-
-### Core
-
-✔ Full Stack Architecture
-✔ Video Upload
-✔ Sensitivity Analysis
-✔ Real-time Updates
-✔ HTTP Range Streaming
-✔ RBAC Roles
-✔ Multi-Tenant Isolation
-
-### Technical
-
-✔ REST API
-✔ MongoDB + Mongoose
-✔ Socket.io
-✔ JWT Authentication
-✔ Multer
-✔ FFmpeg
-✔ Clean Folder Structure
-
-### Deployment
-
-✔ Public URL (Frontend)
-✔ Public URL (Backend)
-✔ MongoDB Atlas
-✔ Demo Accounts
-
-### Docs
-
-✔ Setup Guide
-✔ Architecture
-✔ API Summary
-✔ User Guide
-
----
-
-# 📄 License
-
-MIT License
-Free to use for interview and learning purposes.
-
----
-
 # 🎉 Final Note
 
 This project is fully completed and deployed end-to-end, meeting all assignment requirements.
