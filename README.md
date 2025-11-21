@@ -225,11 +225,6 @@ The system analyzes videos using multiple factors:
 3. **Filename Keywords**: Scans for sensitive terms
 4. **Random Simulation**: 20% chance for demo variety
 
-### Classification Scores:
-- **0-29 points**: ✅ Safe (approved for all viewers)
-- **30-69 points**: ⚠️ Flagged (requires review)
-- **70+ points**: ❌ Rejected (blocked from platform)
-
 ### Future AI Integration Ready:
 - AWS Rekognition Content Moderation
 - Google Cloud Video Intelligence API
@@ -504,37 +499,8 @@ MIT License - Free for interview demonstration and learning purposes
 
 ---
 
-## 🎉 Application is Production-Ready! ✅
-
-Your complete video upload and streaming platform includes:
-
-✅ **Full-Stack Architecture** - Complete backend API + React frontend  
-✅ **Real-Time Communication** - Socket.io for instant updates  
-✅ **Secure Authentication** - JWT tokens with role-based permissions  
-✅ **Content Moderation** - Automated sensitivity analysis system  
-✅ **Efficient Streaming** - HTTP range requests for smooth playback  
-✅ **Professional UI** - Modern orange theme with glassmorphism effects  
-✅ **Role-Based Access** - Three-tier permission system (Viewer/Editor/Admin)  
-✅ **MongoDB Integration** - Structured data models with Mongoose ODM  
-✅ **Production Features** - Error handling, CORS, security, and more  
-
-### 🎯 Ready for Deployment!
-
-**Perfect for**: Interview demonstrations, portfolio projects, production deployment
-
 **Next Steps**: 
 1. Clone/fork repository
 2. Follow Quick Start guide
 3. Test with demo accounts
 4. Deploy to production (optional)
-
----
-
-## 📞 Support & Feedback
-
-For questions or improvements, please:
-- Open an issue on GitHub
-- Submit a pull request
-- Contact the author
-
-**Built with ❤️ using modern web technologies**
