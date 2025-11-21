@@ -94,6 +94,7 @@ a { color: inherit; }
 	border-radius: var(--radius);
 	padding: 2.5rem;
 	box-shadow: 0 30px 60px -35px rgba(255, 107, 26, 0.35);
+	border: 2px solid rgba(255, 140, 66, 0.2);
 	display: grid;
 	gap: 1.4rem;
 }
@@ -179,6 +180,9 @@ a { color: inherit; }
 	border-radius: 10px;
 	padding: 0.6rem 0.8rem;
 	font-size: 0.9rem;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	max-width: 100%;
 }
 
 /* Application shell */
@@ -396,6 +400,7 @@ footer {
 	object-fit: cover;
 	display: block;
 	background: #000;
+	max-width: 100%;
 }
 
 .thumb-overlay {
@@ -490,7 +495,7 @@ footer {
 .modal-content header h3 { margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .modal-content header p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-.modal-content video { width: 100%; border-radius: 12px; background: #000; }
+.modal-content video { width: 100%; max-width: 100%; border-radius: 12px; background: #000; }
 
 .modal-content footer { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; color: var(--muted); }
 
