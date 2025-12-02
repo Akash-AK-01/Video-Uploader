@@ -36,7 +36,7 @@ This project is built as part of the **Pulse Talent Team Full-Stack Assignment**
 
 ### 🎥 Video Upload & Processing
 
-* Upload up to **500MB**
+* Upload up to **1GB**
 * Real-time progress updates
 * FFmpeg-based video metadata extraction
 * Sensitivity scoring:
